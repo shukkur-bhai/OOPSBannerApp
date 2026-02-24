@@ -1,18 +1,17 @@
 /**
  * OOPSBannerApp
  *
- * UC4: Refactored banner using String array and enhanced for-loop
- * to improve modularity and reusability.
+ * UC5: Concise array declaration and initialization
+ * using String.join() within a single statement.
  *
  * @author Shukkur
- * @version 4.0
+ * @version 5.0
  */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
         String[] banner = {
-
                 String.join("", " *****   ", " *****   ", " *****   ", " ***** "),
                 String.join("", "*     * ", "*     * ", "*     * ", "*     *"),
                 String.join("", "*     * ", "*     * ", "*     * ", "*      "),
