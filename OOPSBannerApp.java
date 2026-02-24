@@ -1,21 +1,64 @@
 /**
+/**
  * OOPSBannerApp
  *
- * UC2: Prints OOPS as a 7-line ASCII banner using '*' and spaces.
+ * UC3: Refactored banner using String.join() 
+ * to improve memory efficiency and readability.
  *
  * @author Shukkur
- * @version 2.0
+ * @version 3.0
  */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println(" *****   *****   *****   ***** ");
-        System.out.println("*     * *     * *     * *     *");
-        System.out.println("*     * *     * *     * *      ");
-        System.out.println("*     * *     * *****   *****  ");
-        System.out.println("*     * *     * *              *");
-        System.out.println("*     * *     * *     * *     *");
-        System.out.println(" *****   *****   *****   ***** ");
+        System.out.println(String.join("",
+                " *****   ",
+                " *****   ",
+                " *****   ",
+                " ***** "
+        ));
+
+        System.out.println(String.join("",
+                "*     * ",
+                "*     * ",
+                "*     * ",
+                "*     *"
+        ));
+
+        System.out.println(String.join("",
+                "*     * ",
+                "*     * ",
+                "*     * ",
+                "*      "
+        ));
+
+        System.out.println(String.join("",
+                "*     * ",
+                "*     * ",
+                " *****  ",
+                " *****  "
+        ));
+
+        System.out.println(String.join("",
+                "*     * ",
+                "*     * ",
+                "*       ",
+                "     *  "
+        ));
+
+        System.out.println(String.join("",
+                "*     * ",
+                "*     * ",
+                "*     * ",
+                "*     * "
+        ));
+
+        System.out.println(String.join("",
+                " *****   ",
+                " *****   ",
+                " *****   ",
+                " ***** "
+        ));
     }
 }
